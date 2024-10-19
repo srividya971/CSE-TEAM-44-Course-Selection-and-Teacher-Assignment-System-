@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #424348;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 10px;
+}
+
+#course-selection, #teacher-profiles, #feedback {
+    background: #efe8e8;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.course-selection {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #090909;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #1238e2;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

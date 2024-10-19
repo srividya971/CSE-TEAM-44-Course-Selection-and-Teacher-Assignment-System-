@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection and Teacher Assignment System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://www.rgmcet.edu.in/assets/img/logo/logo.jpg"alt="rgmcet"width=60">
+        <h1>RGMCET</h1>
+        <h1>University Course Selection & Teacher Assignment</h1>
+    </header>
+
+    <section id="course-selection">
+        <h2>Select Your Courses</h2>
+        <form id="course-form" action="/submit-courses" method="post">
+            <h3>Theory Courses</h3>
+            <div class="course-selection">
+                <label for="theory1">Theory Course 1:</label>
+                <select name="theory1" id="theory1">
+                    <option value="">select course</option>
+                    <option value="">c</option>
+                    <option value="">c++</option>
+                    <option value="">python</option>
+                    <option value="">java</option>
+                    <!-- Populate with courses from the database -->
+                </select>
+                <label for="teacher1">Select Teacher1:</label>
+                <select name="teacher1" id="teacher1">
+                    <option value="">Select Teacher</option>
+                    <option value="">Ravikanth </option>
+                    <option value="">Madusudhana Reddy</option>
+                    <!-- Populate with teachers from the database -->
+                </select>
+                <label for="theory2">Theory Course 2:</label>
+                <select name="theory2" id="theory2">
+                    <option value="">select course</option>
+                    <option value="">BEEE</option>
+                    <option value="">BCME</option>
+                    <option value="">Engineering Drawing</option>
+                    <option value="">English</option>
+                    <!-- Populate with courses from the database -->
+                </select>
+                <label for="teacher2">Select Teacher2:</label>
+                <select name="teacher2" id="teacher2">
+                    <option value="">Select Teacher</option>
+                    <option value="">Balakrishna </option>
+                    <option value="">Rasool</option>
+                    <!-- Populate with teachers from the database -->
+                </select>
+                <label for="theory3">Theory Course 3:</label>
+                <select name="theory3" id="theory3">
+                    <option value="">select course</option>
+                    <option value="">chemistry</option>
+                    <option value="">physics</option>
+                    <option value="">Maths 1</option>
+                    <option value="">Maths 2</option>
+                    <!-- Populate with courses from the database -->
+                </select>
+                 <label for="teacher3">Select Teacher3:</label>
+                <select name="teacher3" id="teacher3">
+                    <option value="">Select Teacher</option>
+                    <option value="">Srinivasulu </option>
+                    <option value="">Anusha</option>
+                    <!-- Populate with teachers from the database -->
+                </select>
+                <label for="theory4">Theory Course 4:</label>
+                <select name="theory4" id="theory4">
+                    <option value="">select course</option>
+                    <option value="">web designing</option>
+                    <option value="">Testing</option>
+                    <option value="">UIT</option>
+                    <option value="">FSAD</option>
+                    <!-- Populate with courses from the database -->
+                </select>
+                <label for="teacher4">Select Teacher4:</label>
+                <select name="teacher4" id="teacher4">
+                    <option value="">Select Teacher</option>
+                    <option value="">Naveen</option>
+                    <option value="">Sravan</option>
+                    <!-- Populate with teachers from the database -->
+                </select>
+            </div>
+            
+            <!-- Repeat this block for 3 more theory courses -->
+            
+            <h3>Lab Courses</h3>
+            <div class="course-selection">
+                <label for="lab1">Lab Course 1:</label>
+                <select name="lab1" id="lab1">
+                    <option value="">Select lab</option>
+                    <option value="">c lab</option>
+                    <option value="">c++ lab</option>
+                    <option value="">python lab</option>
+                    <option value="">java lab</option>
+                    <!-- Populate with lab courses from the database -->
+                </select>
+                <label for="labteacher1">Select Teacher1:</label>
+                <select name="labteacher1" id="labteacher1">
+                    <option value="">Select Teacher</option>
+                    <option value="">Ravikanth </option>
+                    <option value="">Madusudhana Reddy</option>
+                    <!-- Populate with lab teachers from the database -->
+                </select>
+                <label for="lab2">Select lab 2:</label>
+                <select name="lab2" id="lab2">
+                    <option value="">select lab</option>
+                    <option value="">web designing lab</option>
+                    <option value="">Testing lab</option>
+                    <option value="">UIT lab</option>
+                    <option value="">FSAD lab</option>
+                    <!-- Populate with courses from the database -->
+                </select>
+                <label for="labteacher2">Select Teacher2:</label>
+                <select name="labteacher2" id="labteacher2">
+                    <option value="">Select Teacher</option>
+                    <option value="">Naveen</option>
+                    <option value="">Sravan</option>
+                    <!-- Populate with teachers from the database -->
+                </select>
+            </div>
+            
+            <!-- Repeat this block for another lab course -->
+
+            <button type="submit">Submit Courses</button>
+        </form>
+    </section>
+
+    <section id="teacher-profiles">
+        <h2>View Teacher Profiles</h2>
+        <div id="teachers-list">
+            <!-- List of teachers with detailed profiles -->
+            <div class="teacher-profile">
+                <h3>Ravikanth</h3>
+                <p>Rating: 4.7/5</p>
+                <p>Research: c,Ads,c-lab</p>
+                <p>Patents: 3 patents related to c</p>
+                <p>Academic Background: PG in Computer Science, rgmcet</p>
+            </div>
+            <!-- Repeat for other teachers -->
+            <div class="teacher-profile">
+                <h3>madhusudhana reddy</h3>
+                <p>Rating: 4.8/5</p>
+                <p>Research: c,Ads,c-lab</p>
+                <p>Patents: 3 patents related to Ads</p>
+                <p>Academic Background: PG in Computer Science, rgmcet</p>
+            </div>
+            <div class="teacher-profile">
+                <h3>Bala krishna</h3>
+                <p>Rating: 4.8/5</p>
+                <p>Research: Engineering graphics</p>
+                <p>Patents: 3 patents related to Eg</p>
+                <p>Academic Background: PG in computer science</p>
+            </div>
+            <div class="teacher-profile"></div>
+                <h3>Rasool</h3>
+                <p>Rating: 4.8/5</p>
+                <p>Research: Physics</p>
+                <p>Patents: 3 patents related to physics</p>
+                <p>Academic Background: PG in computer science</p>
+            </div>
+            <div class="teacher-profile"></div>
+                <h3>Anusha</h3>
+                <p>Rating: 4.8/5</p>
+                <p>Research:science</p>
+                <p>Patents: 3 patents related to physics</p>
+                <p>Academic Background: BED in science</p>
+            </div>
+            <div class="teacher-profile"></div>
+                <h3>Naveen</h3>
+                <p>Rating: 4.8/5</p>
+                <p>Research:web technology</p>
+                <p>Patents: 3 patents related to programming</p>
+                <p>Academic Background: phd in computer science</p>
+            </div>
+            <div class="teacher-profile"></div>
+                <h3>Sravan</h3>
+                <p>Rating: 4.8/5</p>
+                <p>Research:python</p>
+                <p>Patents: 3 patents related to python</p>
+                <p>Academic Background: phd in computer science</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback">
+        <h2>Submit Teacher Feedback</h2>
+        <form id="feedback-form" action="/submit-feedback" method="post">
+            <label for="teacher">Select Teacher:</label>
+            <select name="teacher" id="teacher">
+                <option value="">Select Teacher</option>
+                <option value="">Ravikanth</option>
+                <option value="">Madhu sudhana reddy</option>
+                <option value="">balakrishna</option>
+                <option value="">rasool</option>
+                <option value="">Bala krishna</option>
+                <option value="">Anusha</option>
+                <option value="">Naveen</option>
+                <option value="">Sravan</option>
+                <!-- Populate with teacher names from the database -->
+            </select>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea name="feedback" id="feedback" rows="4"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+    <
+
+    <footer>
+        <p>&copy; 2024 University Course Selection System</p>
+    </footer>
+</body>
+</html>
